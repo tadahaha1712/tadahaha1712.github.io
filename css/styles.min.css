@@ -344,7 +344,7 @@ section .header {
   transition: all 300ms ease-in-out;
 }
 .hero {
-  min-height: 900px;
+  height: 100vh;
   background: url("../img/cover.png") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -934,4 +934,33 @@ body.modal-open {
 
 #replace-me {
   text-align: center
+}
+
+.video-container{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+    
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+    
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
 }
