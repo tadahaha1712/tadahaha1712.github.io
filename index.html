@@ -39,10 +39,7 @@
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link
-      rel="stylesheet"
-      href="css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
   <body id="top">
@@ -54,11 +51,42 @@
       </p>
     <![endif]-->
     <section class="hero">
-      <div class="video-container" style="
-    position: absolute;
-">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/KE4IuFSUweI?&autoplay=1&mute=1&playsinline=1&controls=0&loop=1&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-</div>
+      <div class="video-container" style="position: absolute">
+        <!-- Hack -->
+        <iframe
+          src="https://olafwempe.com/mp3/silence/silence.mp3"
+          type="audio/mp3"
+          allow="autoplay"
+          id="audio"
+          style="display: none"
+        ></iframe>
+        <video
+          id="hero-video"
+          muted
+          autoplay
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="./videos/thiep-cuoi-tat-dat-hong-anh.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <video
+          id="hero-video-mobile"
+          muted
+          autoplay
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="./videos/thiep-cuoi-tat-dat-hong-anh-shorts.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
       <section class="navigation">
         <header>
           <div class="header-content">
