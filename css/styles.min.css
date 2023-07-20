@@ -950,6 +950,11 @@ body.modal-open {
   transform: translate(-50%, -50%);
 }
 
+.video-container video img {
+  width: 100%;
+  height: auto;
+}
+
 #hero-video-mobile {
   display: none;
 }
@@ -972,6 +977,11 @@ body.modal-open {
   }
 
   .video-container video {
+    width: auto;
+    height: 100%;
+  }
+
+  .video-container video img {
     width: auto;
     height: 100%;
   }
