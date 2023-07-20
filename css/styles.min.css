@@ -345,7 +345,7 @@ section .header {
 }
 .hero {
   height: 100vh;
-  background: url("../img/cover.png") center center;
+  background: url("../img/hero-bg-desktop.jpeg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -959,6 +959,10 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 600px) {
+  .hero {
+    background: url("../img/hero-bg-mobile.jpeg") center center;
+  }
+
   #hero-video-mobile {
     display: block;
   }
