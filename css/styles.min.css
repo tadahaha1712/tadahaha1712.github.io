@@ -939,6 +939,7 @@ body.modal-open {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  overflow: hidden;
 }
 
 .video-container video {
