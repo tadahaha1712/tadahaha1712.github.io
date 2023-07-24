@@ -987,7 +987,7 @@ body.modal-open {
     height: 100%;
   }
 
-  .hero-image-mobile {
+  #hero-image-mobile {
     width: 100%;
     height: auto;
   }
