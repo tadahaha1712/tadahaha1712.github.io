@@ -956,7 +956,7 @@ body.modal-open {
   height: auto;
 }
 
-#hero-video-mobile {
+#hero-image-mobile {
   display: none;
 }
 
@@ -969,7 +969,7 @@ body.modal-open {
     background: url("../img/hero-bg-mobile.jpeg") center center;
   }
 
-  #hero-video-mobile {
+  #hero-image-mobile {
     display: block;
   }
 
@@ -985,6 +985,11 @@ body.modal-open {
   .video-container video img {
     width: auto;
     height: 100%;
+  }
+
+  .hero-image-mobile {
+    width: 100%;
+    height: auto;
   }
 }
 
